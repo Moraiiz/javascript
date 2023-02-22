@@ -1,0 +1,5 @@
+BIBLIOGRAFIA
+JavaScript o guia definitivo
+JavaScript o guia do programador
+
+Guia de referência - Mozilla e ecma (gratuitos)
