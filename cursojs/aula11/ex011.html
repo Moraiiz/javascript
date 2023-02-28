@@ -7,20 +7,51 @@
     <title>Exercício do estrangeiro</title>
     <style>
         body {
-            background-color: black;
+            background-color:black;
             font-family: Arial, Helvetica, sans-serif;
         }
 
         main {
             background-color: white;
             width: 350px;
-            height: 350px;
+            height: 200px;
+            border-radius: 25px;
+            margin: auto;
+            margin-top: 200px;
+            padding: 10px;
+            text-align: center;
         }
+        h1 {
+            font-size: 25px;
+            padding-top: 25px ;
+        }
+
     </style>
 </head>
 <body>
     <main>
+        <h1>Em qual país você mora?</h1>
+        <input type="text" name="txt" id="txt">
+        <input type="button" value="Enviar" onclick="responder()">
+        <div id="tex">
 
+        </div>
     </main>
+
+    <script>
+        function responder() {
+            var texto = document.querySelector('input#txt')
+            var res = document.querySelector('div#tex')
+            var pais = texto.value
+
+            if (pais == 'Brasil') {
+                res.innerHTML = `<p>Morando em ${pais}. Você é Brasileiro!<p/>`
+            }else {
+                res.innerHTML = `<p>Morando em ${pais}. Você é estrangeiro!</p>`
+            }
+        }
+
+
+    </script>
 </body>
 </html>
